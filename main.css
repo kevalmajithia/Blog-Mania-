@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('bg_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-image: url('bg_image.jpg'); */
+    /* background-color: red; */
+    height: 7vw;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+.content {
+    /* background-color: blue; */
+    height:595px;
+    display: flex;
+    padding: 0 44px;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('bg_image.jpg'); */
+    margin: auto;
+}
+
+.content-left {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 50%;
+    margin: auto;
+    padding: 10px 0px;
+    max-width: 900px;
+    min-width: 400px;
+    flex-direction: column;
+}
+
+.content-right {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    /* width: 50%; */
+}
+
+.content-right img {
+    height: 350px;
+    width: 450px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.left {
+    align-items: center;
+    margin: 10px;
+}
+
+.right {
+    align-items: center;
+    margin: 20px;
+}
+
+.nav-left ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-left {
+    display: flex;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.nav-left ul li {
+    margin: 0 20px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-left ul li:hover {
+    scale: 1.25;
+    /* color: rgb(6, 106, 255); */
+}
+
+h2 {
+    font-size: 35px;
+    margin: 40px;
+    transition: all 0.2s linear;
+}
+
+h2:hover {
+    scale: 1.20;
+
+}
+
+p {
+    margin-right: 19px;
+}
+
+.search {
+    margin: 13px;
+    padding: 9px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.search:hover {
+    border: 3px solid rgb(250, 130, 130);
+}
+
+.btn {
+    margin: 5px;
+    padding: 9px 15px;
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    padding: 17px 0px;
+}
+
+.home {
+    height: 455px;
+    /* background-color: red; */
+}
+
+.footer {
+    /* background-color: orange; */
+    height: 200px;
+    display: flex;
+    margin: 25px;
+    cursor: pointer;
+    /* background-image: url('bg_image.jpg'); */
+    /* border: 2px solid black;
+    border-radius: 13px; */
+}
+
+.footer-left {
+    display: flex;
+    width: 50%;
+    margin: 10px;
+}
+
+.footer-left ul li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    /* margin: 0px; */
+    /* padding: 10px    ; */
+}
+
+.footer-left ul li:hover {
+    scale: 1.2;
+    /* font-style: italic; */
+}
+
+.footer-right {
+    display: flex;
+    width: 50%;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-right img {
+    height: 190px;
+    width: 300px;
+    display: flex;
+    margin: 0 150px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.setting {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.img_ar {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 3px
+}
+
+span {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.pad {
+    padding: 0 20px;
+}
+
+.article1 {
+    transition: all 0.5s linear;
+}
+
+.article2 {
+    transition: all 0.5s linear;
+}
+
+.article3 {
+    transition: all 0.5s linear;
+}
+
+.article1:hover {
+    scale: 1.25;
+}
+
+.article2:hover {
+    scale: 1.25;
+}
+
+.article3:hover {
+    scale: 1.25;
+}
+.home{
+    /* height: 800px; */
+    /* background-color: red; */
+}
+.img{
+    padding: 0px;
+    margin: 0px;
+    background-size: cover;
+}
+.text{
+    text-decoration: none;
+    color: black;
+}
+.active{
+    font-size: 30px;
+    font-weight: bolder;
+    scale: 1.25;
+}

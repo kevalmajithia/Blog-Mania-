@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="utils.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url('bg_image.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;  
+            /* margin-top: 130px; */
+        }
+        .container{
+            height: 370px;
+            width: 350px;
+            border: 1px solid black;
+            border-radius: 9px;
+            display: flex;
+            align-items: center;
+            justify-items: center; 
+            backdrop-filter: blur(4px);
+        }
+        .container::before{
+            position: absolute;
+            background: inherit;
+            box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+            filter: blur(10px);
+        }
+        /* .container-left{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+        }
+        .container-right{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+        } */
+
+        .input [type=text],textarea{
+            display: flex;
+            flex-direction: column;
+            /* width: 100%; */
+            margin-left: 80px;
+            margin-top:20px ;
+            border: 2px solid black;
+            border-radius: 3px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            /* height: 155px;
+            width: 195px; */
+            /* padding:140px; */
+        }
+        .input [type=file]{
+            margin-top:20px ;
+            margin-left: 90px;
+            text-align: center;
+        }
+        .heading{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            font-weight: bolder ;
+            font-size: 25px;
+            transition: all 0.3s linear;
+            letter-spacing: 1.5px;
+            /* color: red; */
+        }
+        .heading:hover{
+            scale: 1.25;
+
+        }
+        .contact{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .checkbox{
+            color: rgb(99, 96, 96);
+            /* margin-top: 10px; */
+            font-weight: bold;
+            /* margin-left: 10px; */
+            /* margin-right: 10px; */
+            margin: 10px;
+        }
+        .btn2{
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    }   
+    .submit{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin-bottom: 20px;
+        margin-left: 110px;
+    }
+    </style>
+</head>
+<body>
+    <nav class="nav m-auto max_width1 ">
+        <div class="nav-left">
+            <h2>Blog Mania</h2>
+            <ul class="ul">
+                <li><a href="/main.html"></a> Home</li>
+                <li><a href="/"></a> About Us</li>
+                <li><a  class="text active"href="/contact.html">Contact Us</a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <input class="search" type="text" placeholder="Search For Articles">
+            <button class="btn">Search</button>
+        </div>
+    </nav>
+    <div class="contact">
+    <div class="heading">
+        <h2>Feel Free to Contact Us</h2>
+    </div>
+    <div class="container">
+        <div class="container-left">
+        <div class="input pad">
+            <input class='gap' type="text" placeholder="Enter Your Name" name="Name">
+            <input class='gap' type="text" name="Mobile Number" placeholder="Enter Your Mobile Number">
+            <input class='gap' type="text" name="Email Id" placeholder="Enter Your Email Id">
+            <input class='gap' type="file" name="File For Submission">
+            <!-- <input class='gap' type="text" name="Additional Remarks" placeholder="Additional Remarks "> -->
+            <textarea name="Remarks" placeholder="Additional Remarks" cols="20" rows="3"></textarea>
+            <div class="checkbox">
+                <input type="checkbox">
+                <label for="checkbox" class="label">I, Hereby declare to submit my article to Blog Mania for its approval and content being displayed in the article is correct to the best of my knowledge</label>
+            </div>
+            <div class="submit">
+                <input type="submit" class="btn" value="Submit">
+            </div>
+        </div>
+        <!-- <div class="container-right">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, facere.</p>
+        </div> -->
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.justify{
+    justify-content: space-between;
+}
+.align{
+    align-items: center;
+}
+.m-auto{
+    margin: auto;
+}
+.max_width1{
+    max-width: 80vw;
+}
+.max_width2{
+    max-width: 60vw;
+}
+.min_width1{
+    min-width: 200px;
+}
+.min_width2{
+    min-width: 100px;
+}
+.m-auto{
+    margin: auto;
+}
+.flex{
+    display: flex;
+    
+}
+/* .ul{
+    text-decoration: none;
+    list-style-type: none;
+} */
